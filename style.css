@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background-color: #b1d9f7c7;
+    /* background-image: url('bg.jpg'); */
+    /* background-size: cover; */
+    overflow: hidden;
+    height: 100vh;
+}
+
+.taskbar{
+    background: #f3f3f3;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 500;
+}
+
+.iconbox{
+    background: #f3f3f3;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 500;
+}
+.startmenu{
+    position:absolute;
+    /* bottom: 50px; */
+    text-align: center;
+    width: 100%;
+    bottom: -600px;
+    transition: all 0.3s ease-out;
+}
+
+.startmenu.active{
+    bottom: 50px;
+    transition: all 0.3s ease-in;
+}
+
+.startmenu img{
+    border-radius: 7px;
+    height: 600px;
+}
+
+.desktop{
+    position: absolute;
+    /* bottom: 50px; */
+    text-align: center;
+    bottom: -170px;
+    width: 100%;
+    transition: all 0.3s ease-out;
+}
+
+.desktop.active{
+    bottom: 50px;
+    transition: all 0.3s ease-in;
+}
+
+.desktop img{
+    border-radius: 7px;
+    height: 150px;
+}
+
+.right{
+    justify-self: flex-end;
+    position: absolute;
+    right:0;
+    height: 43px;
+    margin-right: 2px;
+}
+
+/* .icons{
+    color: white;
+} */
